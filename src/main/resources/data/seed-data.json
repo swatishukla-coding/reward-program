@@ -1,0 +1,31 @@
+{
+  "customers": [
+    { "customerId": "C001", "name": "Alice Johnson" },
+    { "customerId": "C002", "name": "Brian Smith" },
+    { "customerId": "C003", "name": "Carla Diaz" }
+  ],
+  "transactions": [
+    { "transactionId": "T0001", "customerId": "C001", "transactionDate": "2026-05-15", "amount": 999.00 },
+
+    { "transactionId": "T0002", "customerId": "C001", "transactionDate": "2026-06-05", "amount": 120.00 },
+    { "transactionId": "T0003", "customerId": "C001", "transactionDate": "2026-06-18", "amount": 45.00 },
+    { "transactionId": "T0004", "customerId": "C001", "transactionDate": "2026-06-25", "amount": 75.50 },
+    { "transactionId": "T0005", "customerId": "C001", "transactionDate": "2026-07-02", "amount": 200.00 },
+    { "transactionId": "T0006", "customerId": "C001", "transactionDate": "2026-07-20", "amount": 99.99 },
+    { "transactionId": "T0007", "customerId": "C001", "transactionDate": "2026-08-10", "amount": 150.25 },
+    { "transactionId": "T0008", "customerId": "C001", "transactionDate": "2026-08-28", "amount": 60.00 },
+
+    { "transactionId": "T0009", "customerId": "C002", "transactionDate": "2026-06-10", "amount": 250.00 },
+    { "transactionId": "T0010", "customerId": "C002", "transactionDate": "2026-06-22", "amount": 30.00 },
+    { "transactionId": "T0011", "customerId": "C002", "transactionDate": "2026-07-05", "amount": 110.00 },
+    { "transactionId": "T0012", "customerId": "C002", "transactionDate": "2026-07-15", "amount": 85.00 },
+    { "transactionId": "T0013", "customerId": "C002", "transactionDate": "2026-08-01", "amount": 500.00 },
+    { "transactionId": "T0014", "customerId": "C002", "transactionDate": "2026-08-19", "amount": 49.99 },
+
+    { "transactionId": "T0015", "customerId": "C003", "transactionDate": "2026-06-14", "amount": 100.00 },
+    { "transactionId": "T0016", "customerId": "C003", "transactionDate": "2026-07-01", "amount": 15.00 },
+    { "transactionId": "T0017", "customerId": "C003", "transactionDate": "2026-07-18", "amount": 130.75 },
+    { "transactionId": "T0018", "customerId": "C003", "transactionDate": "2026-08-05", "amount": 60.00 },
+    { "transactionId": "T0019", "customerId": "C003", "transactionDate": "2026-08-22", "amount": 95.00 }
+  ]
+}
