@@ -27,15 +27,6 @@ public class RewardsController {
         this.rewardsService = rewardsService;
     }
 
-    /**
-     * Reward points for one customer, broken down by month.
-     *
-     * @param customerId the customer to look up
-     * @param months     size of the trailing window, in months (default 3 per the take-home spec,
-     *                   but exposed as a parameter so the API isn't hard-coded to a fixed period)
-     * @param asOfDate   optional reference date the window is measured back from; defaults to today,
-     *                   useful for reproducible testing against fixed data
-     */
     @GetMapping("/customers/{customerId}")
     public ResponseEntity<CustomerRewardsResponse> getCustomerRewards(
             @PathVariable String customerId,
@@ -46,9 +37,7 @@ public class RewardsController {
         return ResponseEntity.ok(rewardsService.getRewardsForCustomer(customerId, months, effectiveDate));
     }
 
-    /**
-     * Reward points for every known customer, same window semantics as above.
-     */
+    
     @GetMapping("/customers")
     public ResponseEntity<List<CustomerRewardsResponse>> getAllCustomerRewards(
             @RequestParam(defaultValue = "3") @Min(1) @Max(24) int months,
